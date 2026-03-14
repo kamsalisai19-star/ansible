@@ -6,7 +6,9 @@
     DURATION: "140HRS"
     TRAINER: "Sivakumar Reddy"
   tasks: 
-    - name: Anisble
+    - name: print variables
+      vars:
+        COURSE: Ansible
       ansible.builtin.debug:
         msg: "courseis: {{ COURSE }}, Trainer is: {{ TRAINER }}, Duration: {{ DURATION }}"
   
